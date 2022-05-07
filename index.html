@@ -14,22 +14,28 @@
       #snap{ font-size: 45px; font-weight: bold;  float: left;}
       #nav1{ float: left; }
       .ull{ display: inline-block;  font-size: 19px; mergin-right: 10%;}
-      .lli{ display: inline-block;  font-size: 19px; }
+      .lli{ display: inline-block;  font-size: 18px; color:#787676; font-weight: bold; }
+      a{ text-decoration:none; color:#787676; }
 
       #bt1{ width: 110px; height: 70; border-radius:10px; border: none;background-color: white; color:black; box-sizing: border-box; float: right; }
       #bt2{ width: 110px; height: 70; border-radius:10px;background-color: white; color:black; box-sizing: border-box; float: right;}
-      #bt11{height: 30px; display: block; font-size: 18px;line-height: 30px;}
-      #bt22{height: 30px; display: block; font-size: 18px;line-height: 30px;}
+      #bt11{height: 30px; display: block; font-size: 18px;line-height: 30px; color:#787676; font-weight: bold;}
+      #bt22{height: 30px; display: block; font-size: 18px;line-height: 30px; color:#787676; font-weight: bold;}
 
-      #mid-section{mergin-left: 10%; mergin-right: 10%; height: 600px; float: left;}
+      #mid-section{padding:10%; padding-top: 0%; height: 600px; float: left;}
 
       #sec1{height: 600px; width: 50%; float: left;}
       #div1{ font-size: 75px; font-weight: bold; }
       #div2{ font-size: 18px; font-family: sans-serif; color:#787676; }
-      #btt{ border-radius:10px; background-color: white; color:black; font-size: 22px; width: 150px;height: 40px; font-weight: bold;}
+      #btt{ border-radius:10px; background-color: white; color: black; color:black; font-size: 22px; width: 150px;height: 40px; font-weight: bold;}
       #sec2{ width:50%; height: 600px;  float: left;}
       #imgm{ width:100%;height:600px ; }
       .ssvg{ width: 16%; height: 30px; mergin-right:10px;}
+
+      #fbox{ display: none; }
+
+      ul #l11:hover #fbox{display:block ; }
+      
 
     </style>
 
@@ -37,20 +43,21 @@
 
   <body style="margin:20px;">
     <div id="header">
-    <div id="snap">Snap</div>
+    <div id="snap"><img src="images/logo.svg"></div>
     <div id="nav1">
     <ul id=ull>
-      <li class="lli">Features <pre>           </pre></li>
-      <li class="lli">Company<pre>           </pre> </li>
-      <li class="lli">Careers<pre>           </pre> </li>
-      <li class="lli">About<pre>           </pre> </li>
+      <li class="lli" id="l11"><a href="#" >Features <img src="images/icon-arrow-down.svg"></a> <pre>           </pre></li>
+      <div id="fbox">hgh</div>
+      <li class="lli" id="l12"><a href="#" >Company <img src="images/icon-arrow-down.svg"></a><pre>           </pre> </li>
+      <li class="lli" id="l13"><a href="#" >Careers</a><pre>           </pre> </li>
+      <li class="lli" id="l14"><a href="#" >About</a><pre>           </pre> </li>
     </ul>
           
     
     </div>
 
-    <button id="bt2"><span id="bt22">Register</span></button>
-    <button id="bt1"><span id="bt11">Login</span></button>
+    <button id="bt2"><span id="bt22"><a href="#">Register</a></span></button>
+    <button id="bt1"><span id="bt11"><a href="#">Login</a></span></button>
     
     </div>
 
@@ -63,7 +70,7 @@
     <div id="div2">Get your team in sync, no matter your location. Streamline processes,
     create team rituals, and watch productivity soar.</div>
     <br><br>
-    <div><button id="btt">Learn more</button></div>
+    <div><button id="btt"><a href="#" style="color:black;">Learn more</a></button></div>
     <br><br><br><br><br><br>
     <div>
       <img class="ssvg" style="" src="images/client-databiz.svg">
